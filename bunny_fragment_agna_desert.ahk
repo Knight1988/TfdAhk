@@ -2,7 +2,7 @@
 
 global toggle := false ; Initialize toggle state
 global sleepW := 4500  ; Duration for holding W in milliseconds
-global sleepS := 5300  ; Duration for holding S in milliseconds
+global sleepS := 5000  ; Duration for holding S in milliseconds
 
 ; Define the V-pressing function
 PressV()
