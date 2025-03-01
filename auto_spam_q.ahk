@@ -1,16 +1,27 @@
 ﻿#Requires AutoHotkey v2.0
 
+; Hold XButton1 (side mouse button) to spam "Q"
+XButton1::
+{
+    while GetKeyState("XButton1", "P") {
+        Send("q")
+        Sleep(200) ; Adjust delay as needed
+    }
+}
+
 ; Hotkey to toggle spamming Q
 F2::
 {
     while true {
-		Send("q")
-		Sleep(500) ; 200 milliseconds = 0.2 seconds
-	}
+        Send("q")
+        Sleep(200) ; Adjust delay as needed
+        Send("zzqz")
+        Sleep(200) ; Adjust delay as needed
+    }
 }
 
 ; Hotkey to reload the script
-F4::
+F3::
 {
     Reload
 }

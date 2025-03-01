@@ -1,4 +1,4 @@
-#Requires AutoHotkey v2.0
+﻿#Requires AutoHotkey v2.0
 #Include Player.ahk
 
 ; F2 to start/stop the loop
@@ -9,13 +9,11 @@ F2::
     {
 		MoveForward(1000)
 		
-		Send("q")
-		
 		MoveBackward(1000)
 		
 		Send("q")
 		
-		Sleep(200)		
+		Sleep(1000)		
 		
 		AbortMission()
 	
