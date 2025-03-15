@@ -2,8 +2,8 @@
 #Include ..\Player.ahk
 
 global toggle := false
-global moveForwardTime := 3000
-global moveBackwardTime := 3000
+global moveForwardTime := 1000
+global moveBackwardTime := 1000
 global totalTime := moveForwardTime + moveBackwardTime
 
 F2::
@@ -13,8 +13,6 @@ F2::
     if toggle {
         SetTimer(Timer1, totalTime)  ; Ensure Timer1 interval matches total movement time
         SetTimer(Timer2, 200) ; Start Timer 2 every 100ms
-		MoveForward(moveForwardTime)
-		MoveBackward(moveBackwardTime)
     } else {
         SetTimer(Timer1, 0)  ; Stop Timer 1
         SetTimer(Timer2, 0)  ; Stop Timer 2
