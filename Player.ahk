@@ -40,6 +40,22 @@ MoveBackward(duration)
     Send("{s up}")    ; Release S
 }
 
+; Function to move left by holding A for a specified duration
+MoveLeft(duration)
+{
+    Send("{a down}")  ; Hold A
+    Sleep(duration)   ; Hold for the specified duration
+    Send("{a up}")    ; Release A
+}
+
+; Function to move right by holding D for a specified duration
+MoveRight(duration)
+{
+    Send("{d down}")  ; Hold D
+    Sleep(duration)   ; Hold for the specified duration
+    Send("{d up}")    ; Release D
+}
+
 ; Function to abort mission
 AbortMission()
 {
@@ -83,4 +99,11 @@ MoveMouseUp()
         ; Delay for the calculated time
         Sleep(Delay)
     }
+}
+
+; Exit script with F4
+F4:: {
+    Send "{w up}" ; Release W
+    Send "{s up}" ; Release S
+    ExitApp
 }
