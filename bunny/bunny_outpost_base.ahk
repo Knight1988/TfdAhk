@@ -26,8 +26,7 @@ Timer1() {
 }
 
 Timer2() {
-    Send("q")
-    Send("c")
+    Send("v")
 }
 
 ; Reload script with F3
